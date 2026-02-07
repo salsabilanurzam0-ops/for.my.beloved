@@ -103,7 +103,7 @@ class _ValentinePageState extends State<ValentinePage>
       for (int i = 0; i < 50; i++) {
         _confetti.add(Confetti(
           x: _random.nextDouble() * 2 - 1,
-          y = _random.nextDouble(),
+          y: _random.nextDouble(),
           size: 4 + _random.nextDouble() * 8,
           color: [
             Colors.pink,
@@ -550,7 +550,7 @@ class _ValentinePageState extends State<ValentinePage>
             foregroundColor: _isNoHovering ? Colors.red : Colors.black87,
           ),
           child: Text(
-            _noMessages[min(_noClicks, _noMessages.length - 1)],
+            _noMessages[_noClicks],
             style: TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.w600,
